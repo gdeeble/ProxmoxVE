@@ -63,9 +63,6 @@ sed -i -e '/listen 3001 ssl reuseport;/s/^/#/' \
 # Move the updated file to nginx config directory
 mv OpenSpeedTest-Server.conf /etc/nginx/conf.d/OpenSpeedTest-Server.conf 
 
-RELEASE=$(curl -s https://github.com/openspeedtest/Speed-Test/releases/latest | grep "tag_name" | awk '{print substr($2, 3, length($2)-4) }')
-echo "${RELEASE}" >"/opt/${APP}_version.txt"
-
 msg_ok "Installed Open Speed Test"
 
 msg_info "Starting nginx Service"
