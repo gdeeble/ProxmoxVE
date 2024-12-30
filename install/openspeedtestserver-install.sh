@@ -21,10 +21,7 @@ $STD apt-get install -y \
   gpg \
   curl \
   sudo \
-  mc \
   git \
-  mediainfo \
-  unrar \
   nginx
 
 msg_ok "Installed Dependencies"
