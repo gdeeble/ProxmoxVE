@@ -37,9 +37,6 @@ rm -rf /usr/share/nginx/html/
 mkdir -p /usr/share/nginx
 ln -s  /opt/openspeedtest/ /usr/share/nginx/html
 
-# Remove any existing default configuration - Force through /dev/null to prevent exit
-mv /etc/nginx/nginx.conf /etc/ngnix/nginx.conf.old 2> /dev/null
-
 # Get a preconfigured nginx configuration from the dev team
 $STD wget -q --content-disposition https://raw.githubusercontent.com/openspeedtest/Nginx-Configuration/refs/heads/main/nginx.conf 
 
