@@ -18,7 +18,7 @@
             "type": "default",
             "script": "ct/openspeedtest.sh",
             "resources": {
-                "cpu": 2,
+                "cpu": 1,
                 "ram": 512,
                 "hdd": 1,
                 "os": "debian",

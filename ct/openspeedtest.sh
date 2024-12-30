@@ -10,7 +10,7 @@ source <(curl -s https://raw.githubusercontent.com/gdeeble/ProxmoxVE/main/misc/b
 # App Default Values
 APP="OpenSpeedtest"
 var_tags="speedtest"
-var_cpu="2"
+var_cpu="1"
 var_ram="512"
 var_disk="1"
 var_os="debian"
