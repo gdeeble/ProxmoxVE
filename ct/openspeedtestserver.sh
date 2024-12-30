@@ -8,7 +8,7 @@ source <(curl -s https://raw.githubusercontent.com/community-scripts/ProxmoxVE/m
 # Source: https://github.com/openspeedtest/Nginx-Configuration/
 
 # App Default Values
-APP="OpenSpeedtest-Server"
+APP="OpenSpeedtestserver"
 var_tags="speedtest"
 var_cpu="2"
 var_ram="512"
