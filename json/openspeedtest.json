@@ -19,7 +19,7 @@
             "script": "ct/openspeedtest.sh",
             "resources": {
                 "cpu": 1,
-                "ram": 512,
+                "ram": 128,
                 "hdd": 1,
                 "os": "debian",
                 "version": "12"

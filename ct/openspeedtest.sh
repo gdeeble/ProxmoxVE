@@ -11,7 +11,7 @@ source <(curl -s https://raw.githubusercontent.com/gdeeble/ProxmoxVE/main/misc/b
 APP="OpenSpeedtest"
 var_tags="speedtest"
 var_cpu="1"
-var_ram="512"
+var_ram="128"
 var_disk="1"
 var_os="debian"
 var_version="12"
