@@ -281,6 +281,7 @@ base_settings() {
   if [ -z "$var_version" ]; then
     var_version="12"
   fi
+  # Add defaults for the Github user and branch to allow forked repos and branches
   if [ -z "$GIT_USER" ]; then
     export GIT_USER="community_scripts"
   fi
