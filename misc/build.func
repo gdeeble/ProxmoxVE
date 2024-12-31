@@ -283,7 +283,7 @@ base_settings() {
   fi
   # Add defaults for the Github user and branch to allow forked repos and branches
   if [ -z "$GIT_USER" ]; then
-    export GIT_USER="community_scripts"
+    export GIT_USER="community-scripts"
   fi
   if [ -z "$GIT_BRANCH" ]; then
     export GIT_BRANCH="main"
@@ -808,8 +808,7 @@ build_container() {
     $PW
   "
   # This executes create_lxc.sh and creates the container and .conf file
-  msg_info "Calling https://raw.githubusercontent.com/${GIT_USER}/ProxmoxVE/${GIT_BRANCH}/ct/create_lxc.sh"
-  bash -c "$(wget -LO - https://raw.githubusercontent.com/${GIT_USER}/ProxmoxVE/${GIT_BRANCH}/ct/create_lxc.sh)" || exit
+  bash -c "$(wget -qLO - https://raw.githubusercontent.com/${GIT_USER}/ProxmoxVE/${GIT_BRANCH}/ct/create_lxc.sh)" || exit
 
   LXC_CONFIG=/etc/pve/lxc/${CTID}.conf
   if [ "$CT_TYPE" == "0" ]; then
