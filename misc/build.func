@@ -282,9 +282,11 @@ base_settings() {
     var_version="12"
   fi
   if [ -z "$GIT_USER" ]; then
+    msg_info "Setting repo source to community_scripts"
     export GIT_USER="community_scripts"
   fi
   if [ -z "GIT_BRANCH" ]; then
+    msg_info "Setting branch to main"
     export GIT_BRANCH="main"
   fi
 }
